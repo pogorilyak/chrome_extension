@@ -37,8 +37,8 @@ var $button;
         'z-index: 0;';
 
     btnHoverCss = '#sendToHubSpot:hover {background-color:#d4491d!important}' +
-                  '#sendToHubSpot:disabled {background-color: red!important}' +
-                  '#sendToHubSpot:disabled:hover {background-color: blue!important}';
+                  '#sendToHubSpot:disabled {background-color: #9E9E9E!important}' +
+                  '#sendToHubSpot:disabled:hover {background-color: #607D8B!important}';
     style = document.createElement('style');
 
     if (style.styleSheet) {
@@ -97,7 +97,7 @@ function checkExisting() {
 function sendContacts(contactData) {
     var xhr = new XMLHttpRequest();
 
-    xhr.open('POST', 'https://api.hubapi.com/contacts/v1/contact/?hapikey=a2ccbd91-df51-498e-ba04-9125f723cc42', true);
+    xhr.open('POST', 'https://api.hubapi.com/contacts/v1/contact/?hapikey=b470f5cf-f915-4744-8edb-0a30bad83250', true);
 
     xhr.setRequestHeader('Content-type', 'application/json; charset=utf-8');
 
